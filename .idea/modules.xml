@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dockerizing/api-gateway-adm/api-gateway-adm.iml" filepath="$PROJECT_DIR$/dockerizing/api-gateway-adm/api-gateway-adm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dockerizing/cadastro-fornecedor/cadastro-fornecedor.iml" filepath="$PROJECT_DIR$/dockerizing/cadastro-fornecedor/cadastro-fornecedor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dockerizing/config-endereco/config-server/config-server.iml" filepath="$PROJECT_DIR$/dockerizing/config-endereco/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dockerizing/config-cadastro-fornecedor/config-server-cadastro-fornecedor/config-server-cadastro-fornecedor.iml" filepath="$PROJECT_DIR$/dockerizing/config-cadastro-fornecedor/config-server-cadastro-fornecedor/config-server-cadastro-fornecedor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dockerizing/endereco/endereco.iml" filepath="$PROJECT_DIR$/dockerizing/endereco/endereco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/microservicos-adm.iml" filepath="$PROJECT_DIR$/.idea/microservicos-adm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dockerizing/naming-server-adm/naming-server-adm.iml" filepath="$PROJECT_DIR$/dockerizing/naming-server-adm/naming-server-adm.iml" />
+    </modules>
+  </component>
+</project>
