@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="925fd7c9-ad64-44c6-8ba1-09878e53ff6d" name="Changes" comment="&quot;zipkin&quot;" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2PbvBdkZkmZYJ41TM2PUCwA1jow" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/scher/intellij-workspace/microservico-adm/endereco/.run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\scher\intellij-workspace\microservico-adm\endereco\.run" />
+      <recent name="C:\Users\scher\intellij-workspace\microservico-adm\endereco\src\main\java\br\com\scheronlini\endereco\service\exceptions" />
+      <recent name="C:\Users\scher\intellij-workspace\microservico-adm\endereco\src\main\java\br\com\scheronlini\endereco\controller\exceptions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\scher\intellij-workspace\endereco\src\main\resources\db" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.scheronlini.endereco.service.implementacao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.EnderecoApplication8081">
+    <configuration name="EnderecoApplication8082" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="br.com.scheronlini.endereco.EnderecoApplication" />
+      <module name="endereco" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8082" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.scheronlini.endereco.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.EnderecoApplication8081" />
+      <item itemvalue="Application.EnderecoApplication8082" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="925fd7c9-ad64-44c6-8ba1-09878e53ff6d" name="Changes" comment="" />
+      <created>1683738489994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683738489994</updated>
+    </task>
+    <task id="LOCAL-00001" summary="&quot;Buscando do Via Cep&quot;">
+      <created>1683846745077</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683846745077</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;salvando com viaCep&quot;">
+      <created>1683849228610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683849228610</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;salvando certo&quot;">
+      <created>1683925541889</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683925541889</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;adcionado config server&quot;">
+      <created>1684174579516</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684174579516</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&quot;adcionado lombok&quot;">
+      <created>1684343425275</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684343425275</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&quot;adcionado interface service e outros metodos&quot;">
+      <created>1684345414755</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684345414755</updated>
+    </task>
+    <task id="LOCAL-00007" summary="&quot;adcionado excessões personalizadas e outros&quot;">
+      <created>1684348589412</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684348589412</updated>
+    </task>
+    <task id="LOCAL-00008" summary="&quot;adcionado dto&quot;">
+      <created>1684635056953</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684635056953</updated>
+    </task>
+    <task id="LOCAL-00009" summary="&quot;load balance&quot;">
+      <created>1684799823612</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684799823613</updated>
+    </task>
+    <task id="LOCAL-00010" summary="&quot;swagger&quot;">
+      <created>1685035642065</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685035642066</updated>
+    </task>
+    <task id="LOCAL-00011" summary="&quot;zipkin&quot;">
+      <created>1685041480053</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685041480053</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Buscando do Via Cep&quot;" />
+    <MESSAGE value="&quot;salvando com viaCep&quot;" />
+    <MESSAGE value="&quot;salvando certo&quot;" />
+    <MESSAGE value="&quot;adcionado config server&quot;" />
+    <MESSAGE value="&quot;adcionado lombok&quot;" />
+    <MESSAGE value="&quot;adcionado interface service e outros metodos&quot;" />
+    <MESSAGE value="&quot;adcionado excessões personalizadas e outros&quot;" />
+    <MESSAGE value="&quot;adcionado dto&quot;" />
+    <MESSAGE value="&quot;load balance&quot;" />
+    <MESSAGE value="&quot;swagger&quot;" />
+    <MESSAGE value="&quot;zipkin&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;zipkin&quot;" />
+  </component>
+</project>

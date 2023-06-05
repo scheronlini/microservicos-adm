@@ -1,0 +1,32 @@
+server:
+ port: 8765
+eureka:
+ client:
+  serviceUrl:
+   defaultZone: http://localhost:8761/eureka
+spring:
+ application:
+  name: api-gateway
+ cloud:
+  gateway:
+   discovery:
+    locator:
+     enabled: true
+   routes:
+    - id: enderecos
+      uri: lb://enderecos
+      predicates:
+       - Path=/enderecos/**
+    - id: cadastro-fornecedor
+      uri: lb://cadastro-fornecedor
+      predicates:
+       - Path=/cadastro-fornecedor/**
+    - id: openapi
+      uri: lb://api-gateway
+      predicates:
+       - Path=/v3/api-docs/**
+      filters:
+       - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
+ sleuth:
+   sampler:
+     probability: 1.0

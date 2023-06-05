@@ -1,0 +1,3 @@
+br\com\scheronlini\apigatewayadm\filter\LoggingFilter.class
+br\com\scheronlini\apigatewayadm\ApiGatewayAdmApplication.class
+br\com\scheronlini\apigatewayadm\configuration\OpenApiConfiguration.class

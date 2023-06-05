@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CadastroFornApplication8001" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="br.com.scheronlini.cadastrofornecedor.CadastroFornecedorApplication" />
+    <module name="cadastro-fornecedor" />
+    <option name="VM_PARAMETERS" value="-Dserver.port=8001" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="br.com.scheronlini.cadastrofornecedor.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

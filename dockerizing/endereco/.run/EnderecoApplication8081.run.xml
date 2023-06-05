@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="EnderecoApplication8081" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="br.com.scheronlini.endereco.EnderecoApplication" />
+    <module name="endereco" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="br.com.scheronlini.endereco.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b44d3763-7cd1-462c-ad3c-8bc0ca0c3e9c" name="Changes" comment="&quot;zipkin&quot;">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2PcC5nk63NMezVaPwBJMBkGXPf7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/scher/intellij-workspace/microservico-adm/dockerizing/cadastro-fornecedor"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\scher\intellij-workspace\microservico-adm\cadastro-fornecedor\.run" />
+      <recent name="C:\Users\scher\intellij-workspace\microservico-adm\cadastro-fornecedor\src\main\resources" />
+      <recent name="C:\Users\scher\intellij-workspace\microservico-adm\cadastro-fornecedor\src\main\java\br\com\scheronlini\cadastrofornecedor\controller\exceptions" />
+      <recent name="C:\Users\scher\intellij-workspace\microservico-adm\cadastro-fornecedor\src\main\java\br\com\scheronlini\cadastrofornecedor\service\exceptions" />
+      <recent name="C:\Users\scher\intellij-workspace\microservico-adm\cadastro-fornecedor\src\main\java\br\com\scheronlini\cadastrofornecedor\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\scher\intellij-workspace\cadastro-fornecedor\src\main\resources\db\migration" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.scheronlini.cadastrofornecedor.dto" />
+      <recent name="br.com.scheronlini.cadastrofornecedor.controller" />
+      <recent name="br.com.scheronlini.cadastrofornecedor.service" />
+      <recent name="br.com.scheronlini.cadastrofornecedor.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CadastroFornApplication8001">
+    <configuration name="CadastroFornApplication8000" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="br.com.scheronlini.cadastrofornecedor.CadastroFornecedorApplication" />
+      <module name="cadastro-fornecedor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.scheronlini.cadastrofornecedor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FornecedorServiceTest.deveBuscarUmFornecedorPorId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cadastro-fornecedor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.scheronlini.cadastrofornecedor.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.scheronlini.cadastrofornecedor.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.scheronlini.cadastrofornecedor.service.FornecedorServiceTest" />
+      <option name="METHOD_NAME" value="deveBuscarUmFornecedorPorId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FornecedorServiceTest.deveInserirFornecedor (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cadastro-fornecedor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.scheronlini.cadastrofornecedor.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.scheronlini.cadastrofornecedor.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.scheronlini.cadastrofornecedor.service.FornecedorServiceTest" />
+      <option name="METHOD_NAME" value="deveInserirFornecedor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FornecedorServiceTest.naoDeveEncontrarUmFornecedorComIdIneexistente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cadastro-fornecedor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.scheronlini.cadastrofornecedor.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.scheronlini.cadastrofornecedor.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.scheronlini.cadastrofornecedor.service.FornecedorServiceTest" />
+      <option name="METHOD_NAME" value="naoDeveEncontrarUmFornecedorComIdIneexistente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FornecedorServiceTest.naoDeveInserirFornecedorcomCnpjCadastrado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cadastro-fornecedor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.scheronlini.cadastrofornecedor.repository.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.scheronlini.cadastrofornecedor.repository.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.scheronlini.cadastrofornecedor.repository.service.FornecedorServiceTest" />
+      <option name="METHOD_NAME" value="naoDeveInserirFornecedorcomCnpjCadastrado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CadastroFornApplication8001" />
+      <item itemvalue="Application.CadastroFornApplication8000" />
+      <item itemvalue="JUnit.FornecedorServiceTest.deveBuscarUmFornecedorPorId" />
+      <item itemvalue="JUnit.FornecedorServiceTest.deveInserirFornecedor (1)" />
+      <item itemvalue="JUnit.FornecedorServiceTest.naoDeveEncontrarUmFornecedorComIdIneexistente" />
+      <item itemvalue="JUnit.FornecedorServiceTest.naoDeveInserirFornecedorcomCnpjCadastrado" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CadastroFornApplication8000" />
+        <item itemvalue="JUnit.FornecedorServiceTest.deveBuscarUmFornecedorPorId" />
+        <item itemvalue="JUnit.FornecedorServiceTest.naoDeveEncontrarUmFornecedorComIdIneexistente" />
+        <item itemvalue="JUnit.FornecedorServiceTest.deveInserirFornecedor (1)" />
+        <item itemvalue="JUnit.FornecedorServiceTest.naoDeveInserirFornecedorcomCnpjCadastrado" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b44d3763-7cd1-462c-ad3c-8bc0ca0c3e9c" name="Changes" comment="" />
+      <created>1683746817790</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683746817790</updated>
+    </task>
+    <task id="LOCAL-00001" summary="alteracao feita">
+      <created>1683925572657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683925572657</updated>
+    </task>
+    <task id="LOCAL-00002" summary="alteracao feita com sucesso">
+      <created>1683926066873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683926066873</updated>
+    </task>
+    <task id="LOCAL-00003" summary="incluido config server">
+      <created>1684176847450</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684176847450</updated>
+    </task>
+    <task id="LOCAL-00004" summary="incluido lombok">
+      <created>1684349626029</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684349626029</updated>
+    </task>
+    <task id="LOCAL-00005" summary="excessões personalizadas">
+      <created>1684350710599</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684350710599</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&quot;alteracao no service&quot;">
+      <created>1684352065893</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684352065893</updated>
+    </task>
+    <task id="LOCAL-00007" summary="&quot;testes junit h2&quot;">
+      <created>1684440807326</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684440807326</updated>
+    </task>
+    <task id="LOCAL-00008" summary="&quot;DTO testes unitarios&quot;">
+      <created>1684627227571</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684627227571</updated>
+    </task>
+    <task id="LOCAL-00009" summary="&quot;load balance&quot;">
+      <created>1684799778128</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684799778128</updated>
+    </task>
+    <task id="LOCAL-00010" summary="&quot;swagger&quot;">
+      <created>1685035826590</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685035826590</updated>
+    </task>
+    <task id="LOCAL-00011" summary="&quot;zipkin&quot;">
+      <created>1685041428172</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685041428172</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="alteracao feita" />
+    <MESSAGE value="alteracao feita com sucesso" />
+    <MESSAGE value="incluido config server" />
+    <MESSAGE value="incluido lombok" />
+    <MESSAGE value="excessões personalizadas" />
+    <MESSAGE value="&quot;alteracao no service&quot;" />
+    <MESSAGE value="&quot;testes junit h2&quot;" />
+    <MESSAGE value="&quot;DTO testes unitarios&quot;" />
+    <MESSAGE value="&quot;load balance&quot;" />
+    <MESSAGE value="&quot;swagger&quot;" />
+    <MESSAGE value="&quot;zipkin&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;zipkin&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="testException" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

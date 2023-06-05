@@ -1,0 +1,14 @@
+br\com\scheronlini\endereco\service\exceptions\ResourceNotFoundException.class
+br\com\scheronlini\endereco\configuration\OpenApiConfiguration.class
+br\com\scheronlini\endereco\service\ViaCepService.class
+br\com\scheronlini\endereco\repository\EnderecoRepository.class
+br\com\scheronlini\endereco\controller\EnderecoController.class
+br\com\scheronlini\endereco\controller\exceptions\ResourceExceptionHandler.class
+br\com\scheronlini\endereco\EnderecoApplication.class
+br\com\scheronlini\endereco\service\EnderecoService.class
+br\com\scheronlini\endereco\dto\EnderecoDto.class
+br\com\scheronlini\endereco\model\Endereco.class
+br\com\scheronlini\endereco\service\implementacao\EnderecoServiceImplem.class
+br\com\scheronlini\endereco\controller\exceptions\StandardError.class
+br\com\scheronlini\endereco\model\Endereco$EnderecoBuilder.class
+br\com\scheronlini\endereco\service\exceptions\DataBaseException.class

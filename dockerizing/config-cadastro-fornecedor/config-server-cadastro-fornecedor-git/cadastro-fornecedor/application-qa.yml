@@ -1,0 +1,24 @@
+server:
+ port: 8000
+spring:
+ application:
+  name: cadastro-fornecedor
+ datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/cadastro_fornecedor?useTimezone=true&serverTimezone=UTC
+  username: root
+  password: yl6kj8a8
+ jpa:
+  hibernate:
+   ddl-auto: update
+  show-sql: true
+  properties:
+   hibernate:
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+ flyway:
+  url: jdbc:mysql://localhost:3306/
+  schemas: cadastro_fornecedor
+  user: root
+  password: yl6kj8a8
+
+
