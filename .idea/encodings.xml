@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/dockerizing/api-gateway-adm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/api-gateway-adm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/cadastro-fornecedor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/cadastro-fornecedor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/config-cadastro-fornecedor/config-server-cadastro-fornecedor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/config-cadastro-fornecedor/config-server-cadastro-fornecedor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/config-endereco/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/config-endereco/config-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/endereco/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/endereco/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/naming-server-adm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dockerizing/naming-server-adm/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
