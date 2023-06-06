@@ -1,0 +1,60 @@
+name: Continuous Integrations with Github
+
+on: [push]
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+   
+    steps:
+        - uses: actions/checkout@v3
+        
+        - name: Log in to Docker Hub
+          uses: docker/login-action@v1
+          with:
+            username: ${{secrets.DOCKER_USERNAME}}
+            password: ${{secrets.DOCKER_PASSWORD}}
+
+        - name: Setup Java JDK
+          uses: actions/setup-java@v1.4.4
+          with:
+           java-version: '11'
+           distribution: 'adopt'
+           
+        - name: Build Eureka Naming Server Container Image
+          working-directory: ./dockerizing/naming-server-adm
+          run: mvn spring-boot:build-image -DskipTests
+          
+        - name: Build API Gateway Container Image
+          working-directory: ./dockerizing/api-gateway-adm
+          run: mvn spring-boot:build-image -DskipTests
+          
+        - name: Build Cadastro-Fornecedor Microservice Jar
+          working-directory: ./dockerizing/cadastro-fornecedor
+          run: mvn clean package -DskipTests
+          
+        - name: Build Enderecos Microservice Jar
+          working-directory: ./dockerizing/endereco
+          run: mvn clean package -DskipTests
+          
+        - name: Docker Compose Build 
+          working-directory: ./dockerizing
+          run: docker-compose build
+         
+        - name: Push to Docker Hub Registry
+          run: |
+           docker tag ${{secrets.DOCKER_USERNAME}}/naming-server-adm:0.0.1-SNAPSHOT ${{secrets.DOCKER_USERNAME}}/naming-server-adm:${{github.run_id}}
+           docker tag ${{secrets.DOCKER_USERNAME}}/naming-server-adm:0.0.1-SNAPSHOT ${{secrets.DOCKER_USERNAME}}/naming-server-adm:latest
+           docker tag ${{secrets.DOCKER_USERNAME}}/api-gateway-adm:0.0.1-SNAPSHOT ${{secrets.DOCKER_USERNAME}}/api-gateway-adm:${{github.run_id}}
+           docker tag ${{secrets.DOCKER_USERNAME}}/api-gateway-adm:0.0.1-SNAPSHOT ${{secrets.DOCKER_USERNAME}}/api-gateway-adm:latest
+           docker tag ${{secrets.DOCKER_USERNAME}}/cadastro-fornecedor:latest ${{secrets.DOCKER_USERNAME}}/cadastro-fornecedor:${{github.run_id}}
+           docker tag ${{secrets.DOCKER_USERNAME}}/endereco:latest ${{secrets.DOCKER_USERNAME}}/endereco:${{github.run_id}}
+           docker push ${{secrets.DOCKER_USERNAME}}/naming-server-adm:${{github.run_id}}
+           docker push ${{secrets.DOCKER_USERNAME}}/naming-server-adm:latest
+           docker push ${{secrets.DOCKER_USERNAME}}/api-gateway-adm:${{github.run_id}}
+           docker push ${{secrets.DOCKER_USERNAME}}/api-gateway-adm:latest
+           docker push ${{secrets.DOCKER_USERNAME}}/cadastro-fornecedor:${{github.run_id}}
+           docker push ${{secrets.DOCKER_USERNAME}}/cadastro-fornecedor:latest
+           docker push ${{secrets.DOCKER_USERNAME}}/endereco:${{github.run_id}}
+           docker push ${{secrets.DOCKER_USERNAME}}/endereco:latest
+           
