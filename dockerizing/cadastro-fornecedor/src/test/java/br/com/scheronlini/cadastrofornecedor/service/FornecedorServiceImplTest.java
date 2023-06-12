@@ -52,12 +52,12 @@ public class FornecedorServiceImplTest {
 
     @Test(expected = Test.None.class)
     public void deveBuscarUmFornecedorPorId() {
-        var fornecedor = Fornecedor.builder().id(7l).cnpj("16612533000164").celular("47997277704")
-                .nomeFantasia("casaredo").razaoSocial("casa verde").ramoAtividade("madereira").build();
 
-        Mockito.when(repository.findById(fornecedor.getId())).thenReturn(Optional.of(fornecedor));
+        Mockito.when(repository.findById(Mockito.anyLong())).thenReturn(optionalFornecedor);
 
-        service.findyById(fornecedor.getId());
+        Fornecedor response = service.findyById(fornecedor.getId());
+
+        org.junit.jupiter.api.Assertions.assertEquals(Fornecedor.class, response.getClass());
 
     }
 
