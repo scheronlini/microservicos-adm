@@ -7,7 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class CadastroFornecedorApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void main() {
+		CadastroFornecedorApplication.main(new String[] {});
 	}
 
 }

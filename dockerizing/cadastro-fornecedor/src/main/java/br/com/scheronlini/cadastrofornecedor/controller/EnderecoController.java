@@ -16,7 +16,6 @@ public class EnderecoController {
 
     @Autowired
     private EnderecoServiceImplementacao enderecoService;
-
     @GetMapping
     public ResponseEntity<List<EnderecoDto>> findAll() {
         List<Endereco> enderecos = enderecoService.findAll();
