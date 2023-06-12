@@ -1,19 +1,21 @@
 package br.com.scheronlini.cadastrofornecedor.service;
 
+import br.com.scheronlini.cadastrofornecedor.dto.FornecedorDto;
 import br.com.scheronlini.cadastrofornecedor.model.Endereco;
 import br.com.scheronlini.cadastrofornecedor.model.Fornecedor;
 import br.com.scheronlini.cadastrofornecedor.repository.FornecedorRepository;
-import br.com.scheronlini.cadastrofornecedor.service.FornecedorService;
 import br.com.scheronlini.cadastrofornecedor.service.exceptions.DataBaseException;
 import br.com.scheronlini.cadastrofornecedor.service.exceptions.RegraNegocioException;
 import br.com.scheronlini.cadastrofornecedor.service.exceptions.ResourceNotFoundException;
-import br.com.scheronlini.cadastrofornecedor.service.implementacao.EnderecoServiceImplementacao;
 import br.com.scheronlini.cadastrofornecedor.service.implementacao.FornecedorServiceImplementacao;
 import org.assertj.core.api.Assertions;
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.mock.mockito.SpyBean;
@@ -27,13 +29,26 @@ import java.util.Optional;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 @ActiveProfiles("test")
-public class FornecedorServiceTest {
+public class FornecedorServiceImplTest {
 
-    @SpyBean
-    FornecedorServiceImplementacao service;
+    @InjectMocks
+    private FornecedorServiceImplementacao service;
+    @Mock
+    private FornecedorRepository repository;
 
-    @MockBean
-    FornecedorRepository repository;
+
+    private Fornecedor fornecedor;
+
+    private FornecedorDto fornecedorDto;
+
+    private Optional<Fornecedor> optionalFornecedor;
+
+    @BeforeEach
+    void setUp(){
+        MockitoAnnotations.openMocks(this);
+        startFornecedor();
+    }
+
 
     @Test(expected = Test.None.class)
     public void deveBuscarUmFornecedorPorId() {
@@ -164,6 +179,20 @@ public class FornecedorServiceTest {
         org.junit.jupiter.api.Assertions.assertNotNull(listaFornecedores);
         org.junit.jupiter.api.Assertions.assertEquals(1, listaFornecedores.size());
         org.junit.jupiter.api.Assertions.assertEquals(Fornecedor.class, listaFornecedores.get(0).getClass());
+    }
+
+    private void startFornecedor(){
+
+        fornecedor = Fornecedor.builder().id(7l).cnpj("16612533000164").celular("47997277704")
+                .nomeFantasia("casaredo").razaoSocial("casa verde").ramoAtividade("madereira").build();
+
+        fornecedorDto = new FornecedorDto(new Fornecedor(7l,"16612533000164",
+                "47997277704","casaredo",null,"4734351724",
+                "47997277704","wwww.casaredo.com","casaredo@casaredo.com","camila"
+                ,"  ","123465","215115",null,
+                "alimentos"));
+        optionalFornecedor = Optional.of(Fornecedor.builder().id(7l).cnpj("16612533000164").celular("47997277704")
+                .nomeFantasia("casaredo").razaoSocial("casa verde").ramoAtividade("madereira").build());
     }
 
 }
