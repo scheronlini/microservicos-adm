@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="925fd7c9-ad64-44c6-8ba1-09878e53ff6d" name="Changes" comment="&quot;zipkin&quot;" />
+    <list default="true" id="925fd7c9-ad64-44c6-8ba1-09878e53ff6d" name="Changes" comment="&quot;zipkin&quot;">
+      <change afterPath="$PROJECT_DIR$/../cadastro-fornecedor/src/test/java/br/com/scheronlini/cadastrofornecedor/service/implementacao/FornecedorServiceImplementacaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cadastro-fornecedor/src/test/java/br/com/scheronlini/cadastrofornecedor/service/FornecedorServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cadastro-fornecedor/src/test/java/br/com/scheronlini/cadastrofornecedor/service/FornecedorServiceImplfgfdgdfgdfTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cadastro-fornecedor/target/cadastro-fornecedor-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cadastro-fornecedor/target/cadastro-fornecedor-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cadastro-fornecedor/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cadastro-fornecedor/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cadastro-fornecedor/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cadastro-fornecedor/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cadastro-fornecedor/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cadastro-fornecedor/target/test-classes/br/com/scheronlini/cadastrofornecedor/service/FornecedorServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -55,17 +67,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/scher/intellij-workspace/microservico-adm/endereco/.run&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/scher/intellij-workspace/microservicos-adm/dockerizing/endereco",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\scher\intellij-workspace\microservico-adm\endereco\.run" />
@@ -79,8 +91,8 @@
       <recent name="br.com.scheronlini.endereco.service.implementacao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EnderecoApplication8081">
-    <configuration name="EnderecoApplication8082" type="Application" factoryName="Application">
+  <component name="RunManager">
+    <configuration name="EnderecoApplication8082" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="br.com.scheronlini.endereco.EnderecoApplication" />
       <module name="endereco" />
       <option name="VM_PARAMETERS" value="-Dserver.port=8082" />
@@ -94,10 +106,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.EnderecoApplication8081" />
-      <item itemvalue="Application.EnderecoApplication8082" />
-    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EnderecoApplication8082" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
