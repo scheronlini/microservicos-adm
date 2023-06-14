@@ -8,22 +8,15 @@ import br.com.scheronlini.cadastrofornecedor.service.exceptions.DataBaseExceptio
 import br.com.scheronlini.cadastrofornecedor.service.exceptions.RegraNegocioException;
 import br.com.scheronlini.cadastrofornecedor.service.exceptions.ResourceNotFoundException;
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import java.util.List;
 import java.util.Optional;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -31,37 +24,41 @@ import static org.junit.jupiter.api.Assertions.*;
 @ActiveProfiles("test")
 public class FornecedorServiceImplementacaoTest {
 
-    public static final long ID = 7L;
-    public static final String CNPJ = "16612533000164";
-    public static final String CELULAR = "47997277704";
-    public static final String NOME_FANTASIA = "casaredo";
-    public static final String RAZAO_SOCIAL = "casa verde";
-    public static final String RAMO_ATIVIDADE = "madereira";
-    public static final String TELEFONE = "4734351724";
-    public static final String SITE = "wwww.casaredo.com";
-    public static final String EMAIL = "casaredo@casaredo.com";
-    public static final String CONTATO = "camila";
-    public static final String OBSERVACAO = "SEM OBS";
-    public static final String INSCRICAO_ESTADUAL = "123465";
-    public static final String INSCRICAO_MUNICIPAL = "215115";
     @SpyBean
     private FornecedorServiceImplementacao service;
     @MockBean
     private FornecedorRepository repository;
-    private Fornecedor fornecedor;
-    private FornecedorDto fornecedorDto;
-    private Optional<Fornecedor> optionalFornecedor;
 
-    @BeforeEach
-    void setUp() {
-        MockitoAnnotations.openMocks(this);
-        startFornecedor();
-    }
-
-    @Test(expected =Test.None.class)
+    @Test(expected = Test.None.class)
     public void deveValidarCnpj() {
         Mockito.when(repository.existsByCnpj(Mockito.anyString())).thenReturn(false);
-        service.validaCnpj("53902394000130");
+        service.validaCnpj("16612533000164");
+    }
+
+    @Test(expected = RegraNegocioException.class)
+    public void naoDeveValidarCnpj() {
+
+        Mockito.when(repository.existsByCnpj(Mockito.anyString())).thenReturn(true);
+
+        service.validaCnpj("16612533000164");
+    }
+
+    @Test(expected = Test.None.class)
+    public void deveBuscarUmFornecedorPorId() {
+
+        var fornecedor = Fornecedor.builder().id(1l).cnpj("16612533000164").celular("47997277704")
+                .nomeFantasia("casaredo").razaoSocial("casa verde").ramoAtividade("madereira").build();
+
+        var optionalFornecedor = Optional.of(fornecedor);
+
+        repository.save(fornecedor);
+
+        Mockito.when(repository.findById(Mockito.anyLong())).thenReturn(optionalFornecedor);
+
+        Fornecedor response = service.findyById(fornecedor.getId());
+
+        assertEquals(Fornecedor.class, response.getClass());
+
     }
 
     @Test(expected = ResourceNotFoundException.class)
@@ -72,6 +69,7 @@ public class FornecedorServiceImplementacaoTest {
         service.findyById(Mockito.anyLong());
 
     }
+
     @Test(expected = Test.None.class)
     public void deveBuscarTodosOsFornecedores() {
         var fornecedor = Fornecedor.builder().id(1l).cnpj("16612533000164").celular("47997277704")
@@ -87,36 +85,8 @@ public class FornecedorServiceImplementacaoTest {
         org.junit.jupiter.api.Assertions.assertEquals(Fornecedor.class, listaFornecedores.get(0).getClass());
     }
 
-
-    @Test(expected = Test.None.class)
-    public void deveBuscarUmFornecedorPorId() {
-
-        var fornecedor1 = Fornecedor.builder().id(1l).cnpj("16612533000164").celular("47997277704")
-                .nomeFantasia("casaredo").razaoSocial("casa verde").ramoAtividade("madereira").build();
-
-        var optionalFornecedor1 = Optional.of(fornecedor1);
-
-        repository.save(fornecedor1);
-
-        Mockito.when(repository.findById(Mockito.anyLong())).thenReturn(optionalFornecedor1);
-
-        Fornecedor response = service.findyById(fornecedor1.getId());
-
-        org.junit.jupiter.api.Assertions.assertEquals(Fornecedor.class, response.getClass());
-
-    }
-
-    @Test(expected = RegraNegocioException.class)
-    public void naoDeveValidarCnpj() {
-
-        Mockito.when(repository.existsByCnpj(Mockito.anyString())).thenReturn(true);
-
-        service.validaCnpj("53902394000130");
-    }
-
     @Test(expected = Test.None.class)
     public void deveInserirFornecedor() {
-
 
         var fornecedor = Fornecedor.builder().id(1l).cnpj("16612533000164").celular("47997277704")
                 .nomeFantasia("casaredo").razaoSocial("casa verde").ramoAtividade("madereira").build();
@@ -166,12 +136,10 @@ public class FornecedorServiceImplementacaoTest {
 
         Fornecedor fornecedorSalvo = service.insert(fornecedor);
 
-
         Mockito.doThrow(RegraNegocioException.class).when(service).validaCnpj(cnpj);
 
         var fornecedor2 = Fornecedor.builder().id(1l).cnpj(cnpj).celular("47997277704")
                 .nomeFantasia("casaredo").razaoSocial("casa verde").ramoAtividade("madereira").build();
-
 
         var endereco2 = Endereco.builder()
                 .id(1l)
@@ -191,21 +159,6 @@ public class FornecedorServiceImplementacaoTest {
         Fornecedor fornecedorSalvo2 = service.insert(fornecedor2);
 
         Mockito.verify(repository, Mockito.never()).save(fornecedorSalvo2);
-
-    }
-    private void startFornecedor(){
-
-        fornecedor = Fornecedor.builder().id(ID).cnpj(CNPJ).celular(CELULAR)
-                .nomeFantasia(NOME_FANTASIA).razaoSocial(RAZAO_SOCIAL).ramoAtividade(RAMO_ATIVIDADE).build();
-
-        fornecedorDto = new FornecedorDto(new Fornecedor(ID,CNPJ,
-                RAZAO_SOCIAL,NOME_FANTASIA ,null, TELEFONE,
-                CELULAR, SITE, EMAIL, CONTATO
-                , OBSERVACAO, INSCRICAO_ESTADUAL, INSCRICAO_MUNICIPAL,null,
-                RAMO_ATIVIDADE));
-        optionalFornecedor = Optional.of(Fornecedor.builder().id(ID).cnpj(CNPJ).celular(CELULAR)
-                .nomeFantasia(NOME_FANTASIA).razaoSocial(RAZAO_SOCIAL).ramoAtividade(RAMO_ATIVIDADE).build());
-        repository.save(fornecedor);
 
     }
 }
