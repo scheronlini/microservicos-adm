@@ -1,6 +1,5 @@
 package br.com.scheronlini.cadastrofornecedor.service.implementacao;
 
-import br.com.scheronlini.cadastrofornecedor.dto.FornecedorDto;
 import br.com.scheronlini.cadastrofornecedor.model.Endereco;
 import br.com.scheronlini.cadastrofornecedor.model.Fornecedor;
 import br.com.scheronlini.cadastrofornecedor.repository.FornecedorRepository;
@@ -29,20 +28,7 @@ public class FornecedorServiceImplementacaoTest {
     @MockBean
     private FornecedorRepository repository;
 
-    @Test(expected = Test.None.class)
-    public void deveValidarCnpj() {
-        Mockito.when(repository.existsByCnpj(Mockito.anyString())).thenReturn(false);
-        service.validaCnpj("16612533000164");
-    }
-
-    @Test(expected = RegraNegocioException.class)
-    public void naoDeveValidarCnpj() {
-
-        Mockito.when(repository.existsByCnpj(Mockito.anyString())).thenReturn(true);
-
-        service.validaCnpj("16612533000164");
-    }
-
+    //Teste FindById
     @Test(expected = Test.None.class)
     public void deveBuscarUmFornecedorPorId() {
 
@@ -58,9 +44,11 @@ public class FornecedorServiceImplementacaoTest {
         Fornecedor response = service.findyById(fornecedor.getId());
 
         assertEquals(Fornecedor.class, response.getClass());
-
+        assertNotNull(response);
+        assertEquals("16612533000164", response.getCnpj());
+        assertEquals("casaredo", response.getNomeFantasia());
     }
-
+    //Teste FindById
     @Test(expected = ResourceNotFoundException.class)
     public void naoDeveEncontrarUmFornecedorComIdIneexistente() {
 
@@ -70,6 +58,7 @@ public class FornecedorServiceImplementacaoTest {
 
     }
 
+    //Teste FindAll
     @Test(expected = Test.None.class)
     public void deveBuscarTodosOsFornecedores() {
         var fornecedor = Fornecedor.builder().id(1l).cnpj("16612533000164").celular("47997277704")
@@ -85,6 +74,7 @@ public class FornecedorServiceImplementacaoTest {
         org.junit.jupiter.api.Assertions.assertEquals(Fornecedor.class, listaFornecedores.get(0).getClass());
     }
 
+    //Teste insert
     @Test(expected = Test.None.class)
     public void deveInserirFornecedor() {
 
@@ -110,7 +100,7 @@ public class FornecedorServiceImplementacaoTest {
         org.assertj.core.api.Assertions.assertThat(fornecedorSalvo).isNotNull();
 
     }
-
+    //Teste insert
     @Test(expected = DataBaseException.class)
     public void naoDeveInserirFornecedorcomCnpjCadastrado() {
 
@@ -161,4 +151,24 @@ public class FornecedorServiceImplementacaoTest {
         Mockito.verify(repository, Mockito.never()).save(fornecedorSalvo2);
 
     }
+
+    //Teste validaCNPJ
+    @Test(expected = Test.None.class)
+    public void deveValidarCnpj() {
+        Mockito.when(repository.existsByCnpj(Mockito.anyString())).thenReturn(false);
+        service.validaCnpj("16612533000164");
+    }
+
+    //Teste validaCNPJ
+    @Test(expected = RegraNegocioException.class)
+    public void naoDeveValidarCnpj() {
+
+        Mockito.when(repository.existsByCnpj(Mockito.anyString())).thenReturn(true);
+
+        service.validaCnpj("16612533000164");
+    }
+
+
+
+
 }
