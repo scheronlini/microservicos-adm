@@ -152,6 +152,57 @@ public class FornecedorServiceImplementacaoTest {
 
     }
 
+    //Teste Update
+    @Test(expected = Test.None.class)
+    public void deveAtualizarFornecedor() {
+
+        var fornecedor = Fornecedor.builder().id(1L).cnpj("16612533000164").celular("47997277704")
+                .nomeFantasia("casaredo").razaoSocial("casa verde").ramoAtividade("madereira").build();
+        var endereco = Endereco.builder()
+                .id(1L)
+                .bairro("ggg")
+                .cep("89224021")
+                .localidade("8888")
+                .logradouro("fgfd")
+                .pontodeReferencia("gdgdfg")
+                .numero("dfgdg")
+                .uf("fd")
+                .build();
+
+        Mockito.when(repository.save(Mockito.any(Fornecedor.class))).thenReturn(fornecedor);
+        Mockito.when(repository.findById(fornecedor.getId())).thenReturn(Optional.of(fornecedor));
+        Mockito.when(service.insertEndereco(fornecedor)).thenReturn(endereco);
+        Fornecedor fornecedorSalvo = service.insert(fornecedor);
+
+        var fornecedorAtualizado = Fornecedor.builder().celular("47984750601")
+                .nomeFantasia("casa do chocolate").razaoSocial("chocolates do norte").ramoAtividade("alimenticio").build();
+
+
+        Mockito.when(repository.getReferenceById(1L)).thenReturn(fornecedor);
+        Mockito.doNothing().when(service).updateData(fornecedor, fornecedorAtualizado);
+
+        Mockito.when(repository.save(fornecedor)).thenReturn(fornecedor);
+
+        var response = service.update(1L, fornecedorAtualizado);
+
+        assertNotNull(response);
+        assertEquals( "47984750601" , fornecedor.getCelular());
+        assertEquals( "casa do chocolate", fornecedor.getNomeFantasia());
+        assertEquals("16612533000164", fornecedor.getNomeFantasia());
+        assertEquals("chocolates do norte", fornecedor.getRazaoSocial() );
+        assertEquals("alimenticio", fornecedor.getRamoAtividade());
+    }
+
+
+
+
+
+
+
+
+
+
+
     //Teste validaCNPJ
     @Test(expected = Test.None.class)
     public void deveValidarCnpj() {
