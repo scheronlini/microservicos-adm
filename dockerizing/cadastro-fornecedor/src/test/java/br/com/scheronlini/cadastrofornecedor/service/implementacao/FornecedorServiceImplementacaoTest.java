@@ -198,11 +198,6 @@ public class FornecedorServiceImplementacaoTest {
 
 
 
-
-
-
-
-
     //Teste validaCNPJ
     @Test(expected = Test.None.class)
     public void deveValidarCnpj() {
